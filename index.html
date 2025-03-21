@@ -228,7 +228,39 @@ MathJax = {
         <td>$\sqrt{\theta_0^2 + \theta_1^2 + 2 \theta_0 \theta_1 \cos(\frac{2\pi}{N}m)}$</td>
         <td>$\arctan\left(\frac{-\theta_1 \sin(\frac{2\pi}{N}m)}{\theta_0 + \theta_1 \cos(\frac{2\pi}{N}m)}\right)$</td>
     </tr>
-    
+    <tr>
+        <td><b>Trained Emulator Overview</b></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Trained on Explicit First-Order Upwind Method under mode $M$</td>
+        <td>$\hat{h}_{\hat{e}_M,m}$</td>
+        <td>$\gamma - \gamma e^{- \frac{2 i \pi m}{N}} + 1$</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Trained on Implicit First-Order Upwind Method under mode $M$</td>
+        <td>$\hat{h}_{\hat{\iota}_M,m}$</td>
+        <td>$\frac{\left(- g + \left(- 4 g \sin^{2}{\left(\frac{\pi M}{N} \right)} + g + 1\right) e^{\frac{2 i \pi m}{N}}\right) e^{- \frac{2 i \pi m}{N}}}{4 g^{2} \sin^{2}{\left(\frac{\pi M}{N} \right)} - 4 g \sin^{2}{\left(\frac{\pi M}{N} \right)} + 1}$</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Trained on Exponential/Analytic Multiplier under mode $M$</td>
+        <td>$\hat{h}_{\hat{a}_M,m}$</td>
+        <td>$\frac{\left(e^{\frac{2 i \pi m}{N}} \sin{\left(\frac{2 \pi M \left(g + 1\right)}{N} \right)} - \sin{\left(\frac{2 \pi M g}{N} \right)}\right) e^{- \frac{2 i \pi m}{N}}}{\sin{\left(\frac{2 \pi M}{N} \right)}}$</td>
+        <td></td>
+        <td></td>
+    </tr>
   </tbody>
 </table> 
 
