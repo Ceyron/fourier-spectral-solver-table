@@ -118,6 +118,15 @@ MathJax = {
         <td>$\gamma \frac{2\pi}{N}m$</td>
     </tr>
     <tr>
+        <td><b>Finite Difference Derivative Operators for first mode</b></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
         <td>Backward Derivative First Mode</td>
         <td>$\hat{b}_1$</td>
         <td>$\frac{N}{L}(1 - \omega_N)$</td>
@@ -152,6 +161,18 @@ MathJax = {
         <td>$0$</td>
         <td>$2\frac{N^2}{L^2}(1-\cos(\frac{2\pi}{N}))$</td>
         <td>$0$</td>
+    </tr>
+    <tr>
+        <td><b>Finite Difference based methods for advection</b></td>
+    </tr>
+    <tr>
+        <td>Explicit First-Order Upwind Method for Advection</td>
+        <td></td>
+        <td>$1 + c \Delta t \hat{b}_m = 1 + \underbrace{c \Delta t \frac{N}{L}}_{=: \alpha N =: \gamma}(1 - \omega_N^m) = 1 + \gamma (1 - \omega_N^m)$</td>
+        <td>$1 + \gamma (1 - \cos(\frac{2\pi}{N}m))$</td>
+        <td>$\gamma \sin(\frac{2\pi}{N}m)$</td>
+        <td>$1 + \gamma \sqrt{(1 - \cos(\frac{2\pi}{N}m))^2 + \sin^2(\frac{2\pi}{N}m)}$</td>
+        <td>$\arctan\left(\frac{\gamma \sin(\frac{2\pi}{N}m)}{1 + \gamma (1 - \cos(\frac{2\pi}{N}m))}\right)$</td>
     </tr>
   </tbody>
 </table> 
