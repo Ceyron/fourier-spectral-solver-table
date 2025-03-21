@@ -183,6 +183,52 @@ MathJax = {
         <td></td>
         <td></td>
     </tr>
+    <tr>
+        <td><b>Solver Overview</b></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Explicit First-Order Upwind Method for Advection</td>
+        <td>$\hat{e}_m$</td>
+        <td>$1 + \gamma(1 - \omega_N^m)$</td>
+        <td>$1 + \gamma (1 - \cos(\frac{2\pi}{N}m))$</td>
+        <td>$\gamma \sin(\frac{2\pi}{N}m)$</td>
+        <td>$1 + \gamma \sqrt{(1 - \cos(\frac{2\pi}{N}m))^2 + \sin^2(\frac{2\pi}{N}m)}$</td>
+        <td>$\arctan\left(\frac{\gamma \sin(\frac{2\pi}{N}m)}{1 + \gamma (1 - \cos(\frac{2\pi}{N}m))}\right)$</td>
+    </tr>
+    <tr>
+        <td>Implicit First-Order Upwind Method for Advection</td>
+        <td>$\hat{\iota}_m$</td>
+        <td>$\frac{1}{1 - \gamma (1 - \omega_N^m)}$</td>
+        <td>$\frac{\gamma \left(\cos{\left(\frac{2 \pi m}{N} \right)} - 1\right) + 1}{4 \gamma^{2} \sin^{2}{\left(\frac{\pi m}{N} \right)} - 4 \gamma \sin^{2}{\left(\frac{\pi m}{N} \right)} + 1}$</td>
+        <td>$\frac{\gamma \sin{\left(\frac{2 \pi m}{N} \right)}}{4 \gamma^{2} \sin^{2}{\left(\frac{\pi m}{N} \right)} - 4 \gamma \sin^{2}{\left(\frac{\pi m}{N} \right)} + 1}$</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Exponential/Analytic Multiplier</td>
+        <td>$\hat{a}_m$</td>
+        <td>$\frac{\exp(\gamma)}{\omega_N^m}$</td>
+        <td>$\cos(\gamma \frac{2\pi}{N}m)$</td>
+        <td>$\sin(\gamma \frac{2\pi}{N}m)$</td>
+        <td>1</td>
+        <td>$\gamma \frac{2\pi}{N}m$</td>
+    </tr>
+    <tr>
+        <td>Parameterized Two-Stencil Kernel</td>
+        <td>$\hat{h}_m$</td>
+        <td>$\theta_0 + \theta_1 \omega_N^m$</td>
+        <td>$\theta_0 + \theta_1 \cos(\frac{2\pi}{N}m)$</td>
+        <td>$-\theta_1 \sin(\frac{2\pi}{N}m)$</td>
+        <td>$\sqrt{\theta_0^2 + \theta_1^2 + 2 \theta_0 \theta_1 \cos(\frac{2\pi}{N}m)}$</td>
+        <td>$\arctan\left(\frac{-\theta_1 \sin(\frac{2\pi}{N}m)}{\theta_0 + \theta_1 \cos(\frac{2\pi}{N}m)}\right)$</td>
+    </tr>
+    
   </tbody>
 </table> 
 
