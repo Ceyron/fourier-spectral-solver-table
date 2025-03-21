@@ -117,6 +117,42 @@ MathJax = {
         <td>1</td>
         <td>$\gamma \frac{2\pi}{N}m$</td>
     </tr>
+    <tr>
+        <td>Backward Derivative First Mode</td>
+        <td>$\hat{b}_1$</td>
+        <td>$\frac{N}{L}(1 - \omega_N)$</td>
+        <td>$\frac{N}{L}(1 - \cos(\frac{2\pi}{N}))$</td>
+        <td>$\frac{N}{L}\sin(\frac{2\pi}{N})$</td>
+        <td>$\frac{N}{L}\sqrt{(1 - \cos(\frac{2\pi}{N}))^2 + \sin^2(\frac{2\pi}{N})}$</td>
+        <td>$\arctan\left(\frac{\sin(\frac{2\pi}{N})}{1 - \cos(\frac{2\pi}{N})}\right)$</td>
+    </tr>
+    <tr>
+        <td>Forward Derivative First Mode</td>
+        <td>$\hat{f}_1$</td>
+        <td>$\frac{N}{L}(\omega_N^{(N-1)} - 1)$</td>
+        <td>$-\frac{N}{L}(1 - \cos(\frac{2\pi}{N}))$</td>
+        <td>$\frac{N}{L}\sin(\frac{2\pi}{N})$</td>
+        <td>$\frac{N}{L}\sqrt{(1 - \cos(\frac{2\pi}{N}))^2 + \sin^2(\frac{2\pi}{N})}$</td>
+        <td>$\arctan\left(\frac{\sin(\frac{2\pi}{N})}{1 - \cos(\frac{2\pi}{N})}\right)$</td>
+    </tr>
+    <tr>
+        <td>Central Derivative First Mode</td>
+        <td>$\hat{c}_1$</td>
+        <td>$\frac{N}{2 L}(\omega_N^{(N-1)} - \omega_N)$</td>
+        <td>$0$</td>
+        <td>$\frac{N}{L}\sin(\frac{2\pi}{N})$</td>
+        <td>$\frac{N}{L}\sin(\frac{2\pi}{N})$</td>
+        <td>$\frac{\pi}{2}$</td>
+    </tr>
+    <tr>
+        <td>Three-Point Stencil for Second Derivative (First Mode)</td>
+        <td>$\hat{l}_1$</td>
+        <td>$\frac{N^2}{L^2}(\omega_N^{(N-1)} - 2 + \omega_N)$</td>
+        <td>$2\frac{N^2}{L^2}(\cos(\frac{2\pi}{N}) - 1)$</td>
+        <td>$0$</td>
+        <td>$2\frac{N^2}{L^2}(1-\cos(\frac{2\pi}{N}))$</td>
+        <td>$0$</td>
+    </tr>
   </tbody>
 </table> 
 
