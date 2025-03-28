@@ -111,7 +111,14 @@ MathJax = {
     <tr>
         <td>Analytical Multiplier to Advection Equation</td>
         <td></td>
-        <td>$\exp(- c \Delta t \hat{d}_m) = \exp(\underbrace{- c \Delta t \frac{2\pi}{L}}_{=:2 \pi \alpha =: 2 \pi \frac{\gamma}{N}}i m) = \exp(i \gamma \frac{2\pi}{N}m)$</td>
+        <td>$\exp(- c \Delta t \hat{d}_m)
+            =
+            \exp(\underbrace{- c \Delta t \frac{2\pi}{L}}_{=:2 \pi \alpha =: 2 \pi \frac{\gamma}{N}}i m)
+            =
+            \exp(i \gamma \frac{2\pi}{N}m)
+            =
+            \frac{\exp(\gamma)}{\omega_N^m}
+        $</td>
         <td>$\cos(\gamma \frac{2\pi}{N}m)$</td>
         <td>$\sin(\gamma \frac{2\pi}{N}m)$</td>
         <td>1</td>
@@ -125,6 +132,8 @@ MathJax = {
             \exp(\underbrace{\nu \Delta t \left(\frac{2\pi}{L}\right)^2}_{=: (2 \pi)^2 \alpha_2 =: (2 \pi)^2 \frac{\gamma_2}{2 N^2}}i^2 m^2)
             =
             \exp(i^2 \frac{\gamma_2}{2} \left(\frac{2\pi}{N}\right)^2 m^2)
+            =
+            \frac{\exp(\gamma_2/2)}{\omega_N^{m^2}}
         $</td>
         <td>$\exp(-\frac{\gamma_2}{2} \left(\frac{2\pi}{N}\right)^2 m^2)$</td>
         <td>$0$</td>
